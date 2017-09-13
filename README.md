@@ -8,7 +8,7 @@ Para instalar, basta copiar os arquivos para dentro de um servidor http que acei
 ##Banco de dados
 O banco de dados utililzado na aplicação é o [mysql](https://www.mysql.com/)
 
-para configurar o banco, rode o script **database/Dump20140729.sql**
+para configurar o banco, rode o script **database/controle_frota.sql**
 
 Para configurar a conexão com o banco edite o arquivo **/application/config/database.php**
 
@@ -30,17 +30,12 @@ Para configurar a conexão com o banco edite o arquivo **/application/config/dat
     $db['default']['autoinit'] = TRUE;
     $db['default']['stricton'] = FALSE;
 
-##Senha de Administrador
 
-As senhas do sistema ficam _criptografadas_, e o _hash_ é gerado em cada máquina (pelo próprio sistema).
 
-Para ter acesso ao sistema, primeiro acesso <http://localhost/index.php/login/ver_senha>, copiar o hash gerado e atualizar o campo **senha** da tabela **usuário** no banco de dados.
 
-![Hash Gerada](https://github.com/ramonsilvanet/controle-frota-php/blob/master/docs/hash_gerada.png)
+CREDITOS: https://github.com/ramonsilvanet
 
-depois disso, basta fazer o login com usuário **admin@controlefrota.net** e senha **123456**
+OBS: O código estava incompleto, conforme conversado com o Ramon.
+Fiz as alterações e implementações necessárias para o mesmo "rodar".
 
-![Formulário Login](https://github.com/ramonsilvanet/controle-frota-php/blob/master/docs/formulario_login.png)
-
-![Lista de Usuários Cadastrados](https://github.com/ramonsilvanet/controle-frota-php/blob/master/docs/lista_usuarios.png)
 
